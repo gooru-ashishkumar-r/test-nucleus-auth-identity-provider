@@ -1,0 +1,54 @@
+{
+   "gmail":{
+      "redirectUrl":"//staging.gooru.org",
+      "clientID":"802763995605-ani2tb72orrm5s1vn3vkhp5hs15rqvvj.apps.googleusercontent.com",
+      "clientSecret":"h5eOpu32op7uU7eTtfE59LX3",
+      "scopeProfile":"https://www.googleapis.com/auth/userinfo.profile",
+      "scopeEmail":"https://www.googleapis.com/auth/userinfo.email"
+   },
+   "wsfed":{
+      "idpUrl":"https://signin.silverbacklearning.net/issue/wsfed",
+      "realm":"http://nucleus.gooru.org/",
+      "thumbprint" : "2F2275E98D56E0F078E34F8C20E0E633FFA5DD4B"
+   },
+   "saml":{
+      "entryPoint":"https://openidp.feide.no/simplesaml/saml2/idp/SSOService.php",
+      "issuer":"nucleus-qa.gooru.org",
+      "certificate":"MIICizCCAfQCCQCY8tKaMc0BMjANBgkqhkiG9w0BAQUFADCBiTELMAkGA1UEBhMCTk8xEjAQBgNVBAgTCVRyb25kaGVpbTEQMA4GA1UEChMHVU5JTkVUVDEOMAwGA1UECxMFRmVpZGUxGTAXBgNVBAMTEG9wZW5pZHAuZmVpZG"
+   },
+   "shibboleth":{
+	  "callbackEndPoint": "/api/nucleus-auth-idp/v1/shibboleth/callback",
+	  "entryPoint": "https://idp.testshib.org/idp/profile/SAML2/Redirect/SSO",
+	  "issuer": "https://nucleus-qa.gooru.org/shibboleth",
+	  "forceAuthn": true,
+	  "identifierFormat": null,
+    "certFilepath": "./cert/privateKey.pem",
+    "decryptionCertFilepath": "./cert/decryptionCert.pem"
+   },
+   "client_id":"ba956a97-ae15-11e5-a302-f8a963065976",
+   "client_key":"c2hlZWJhbkBnb29ydWxlYXJuaW5nLm9yZw==",
+   "baseUrl":"http://local.gooru.org",
+   "hostname":"http://local.gooru.org",
+   "domainName":"local.gooru.org",
+   "authHandlerInternalHostName" : "http://localhost:8081",
+   "redis" : {
+   		"host": "127.0.0.1",
+    	"port": 6379,
+    	"expiryInMinutes" : 5
+   },
+   "database": {
+     "nucleusDb": {
+       "user": "nucleus",
+       "database": "nucleus",
+       "password": "nucleus",
+       "host": "localhost",
+       "port": 5432,
+       "max": 5,
+       "idleTimeoutMillis": 30000
+     }
+   },
+   "appConfiguration": {
+     "port": 3000,
+     "loggerFilePath": "/tmp/idp.log"
+   }
+}
