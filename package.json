@@ -27,7 +27,7 @@
     "superagent": "0.21.0",
     "uuid-v4": "0.1.0",
     "winston": "2.4.0",
-    "winston-daily-rotate-file": "1.7.2",
+    "winston-daily-rotate-file": "4.7.1",
     "x-xss-protection": "^2.0.0"
   }
 }
